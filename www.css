@@ -1,0 +1,48 @@
+#arama {
+    background-color: red;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+#icerik{
+    background-color: blue;
+    height: 250px;
+    float: left;
+
+}
+
+#resim{
+    background-size: cover;
+
+    float: left;
+}
+
+#resim2{
+    float: left;
+    background-color: burlywood;
+    height: 250px;
+}
+#resim3{
+    background-color: aqua;
+    height: inherit;
+    float: left;
+}
+
+
+
+
+
+
+#ortala{
+    text-align: center;
+    background-color: white;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px 1px 1px;
+}
+
+li{
+    list-style: none;
+}

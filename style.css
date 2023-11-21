@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Lato:ital,wght@0,100;1,400;1,700&family=Montserrat:wght@700&family=Poppins:wght@100;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+
+/*
+    font-family: 'Dancing Script', cursive;
+
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+html {
+    font-size: 10px;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 4px;
+    }
+}
+
+li a,
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #333;
+
+}
+
+:root {
+    --white: #fff;
+    --gray: #333;
+    --yellow: #cd853f;
+    --lightBlue: #e0eee0;
+}
+
+/**/
+
+.nav-container {
+    width: 100%;
+    padding: 0.2rem 20rem;
+    background-color: var(--gray);
+    color: var(--white);
+    /* position: fixed; */
+
+
+    @media only screen and (max-width: 768px) {
+        padding: 0 2rem;
+    }
+}
+
+.nav-container .wrraper {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 1.7rem;
+    /************/
+
+    @media only screen and (max-width: 768px) {
+        padding-top: 1rem;
+    }
+
+}
+
+.nav-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: var(--yellow);
+
+    @media only screen and (max-width: 768px) {}
+}
+
+.nav-container .nav-links {
+    display: flex;
+    margin-left: auto;
+
+}
+
+.nav-container .nav-links ul {
+    display: flex;
+}
+
+
+
+.nav-link a {
+    margin-right: 4rem;
+    color: var(--white);
+    transition: 0.5s;
+
+    @media only screen and (max-width: 768px) {
+        margin: 0.5rem;
+    }
+
+}
+
+.nav-link a:hover {
+    border-bottom-style: solid;
+	border-width: 0.1rem;
+	padding-bottom: 0.5rem;
+    color: var(--yellow);
+}
+
+.nav-link-icon a {
+    margin-right: 2rem;
+    color: var(--white);
+
+    @media only screen and (max-width: 768px) {
+        margin-right: 1rem;
+    }
+}
+
+.nav-link-icon-shopping {
+    position: relative;
+
+}
+
+.nav-link-icon-shopping .sopping-card {
+    width: 40rem;
+    height: auto;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--gray);
+    position: absolute;
+    top: 4.2rem;
+    left: -15rem;
+    /* display: none; */
+
+    @media screen and (max-width: 1000px) {
+        left: -26rem;
+    }
+
+}
+
+.nav-link-icon-shopping .sopping-card h2 {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    color: var(--yellow);
+
+
+
+}
+
+.nav-link-icon-shopping .sopping-card .sopping-list-item {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.nav-link-icon-shopping .sopping-card .sopping-list-item .text {
+    max-width: 11rem;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link-icon-shopping .sopping-card .sopping-list-item img {
+
+    width: 12rem;
+    height: auto;
+    background-size: cover;
+}
+
+.nav-link-icon-shopping .sopping-card .sopping-list-item .delete-icon i {
+
+    color: red;
+}
+
+
+.nav-link-icon button {
+    width: 11rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    background-color: var(--yellow);
+    color: var(--white);
+    padding-left: 1.3rem;
+    border: none;
+    margin-top: -0.5rem;
+    /***************/
+
+
+    @media only screen and (max-width: 768px) {
+        width: 7rem;
+        height: 2.5rem;
+        margin: 0;
+    }
+}
+
+.nav-link-icon button a {
+    text-align: center;
+    text-decoration: none;
+}
+
+/** govde ------------------------------*/
+
+.header-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/hedader-eat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: 768px) {
+        height: 100%;
+        padding-bottom: 2rem;
+
+    }
+}
+
+.header-container .into {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+}
+
+.header-container .into .into-title {
+    font-size: 10rem;
+    font-weight: 100;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.header-container .into .into-text {
+    font-size: 1.7rem;
+    text-align: left;
+    text-indent: 2rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+    margin: 4rem 0;
+
+    @media only screen and (max-width: 768px) {
+        line-height: 2.7rem;
+        font-size: 1.5rem;
+
+    }
+}
+
+.header-container .into .into-btn {
+    padding: 1em 4rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+/*section background eat  */
+
+.background-eat {
+    width: 90%;
+    margin: auto;
+}
+
+.background-eat .background-eat-img {
+    width: 100%;
+    height: 40rem;
+    background-image: url(image/mixed-eat.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: 768px) {
+        height: 20rem;
+        background-size: contain;
+
+    }
+}
+
+/*eat yemek*/
+
+.eat-container {
+    width: 90%;
+    margin: auto;
+}
+
+.eat-container .eat-img {
+    position: relative;
+}
+
+.eat-container img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.eat-container .eat-text {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eat-container .eat-text p {
+    width: 70%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-indent: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    top: 7rem;
+    position: absolute;
+    align-items: center;
+    overflow: hidden;
+
+    @media only screen and (max-width: 768px) {
+        top: 3rem;
+        width: 70%;
+        height: 15rem;
+        font-size: 1.2rem;
+
+    }
+
+}
+
+.eat-container .eat-text button {
+    padding: 1.5rem 5rem;
+    position: absolute;
+    bottom: 21rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--gray);
+    color: var(--white);
+    font-size: 1.5rem;
+
+    @media only screen and (max-width: 768px) {
+        bottom: 12.5rem;
+
+    }
+
+}
+
+/*  trust  */
+
+.trust-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+
+}
+
+.trust-container .text h4 {
+    font-size: 3rem;
+    padding: 1rem 0;
+    color: var(--yellow);
+}
+
+.trust-container .text p {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.trust-column {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+
+    }
+}
+
+.trust-column .col {
+    width: 30%;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+}
+
+.trust-column .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--yellow);
+}
+
+
+
+/** govde ------------------------------*/
+
+
+
+
+/** FOOTER ---------------------*/
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    color: var(--white);
+    background-color: var(--gray);
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+.footer-container .footer-card {
+    width: 30%;
+    font-size: 1.3rem;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+}
+
+.footer-container .footer-card h3 {
+    font-size: 2.3rem;
+    padding-bottom: 2rem;
+    color: var(--yellow);
+}
+
+.footer-container .footer-card p {
+    color: var(--white);
+}
+
+.footer-container .footer-card .social i {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--gray);
+}
